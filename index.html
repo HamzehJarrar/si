@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <style>
+
+.portfolio-item {
+            position: relative;
+            display: inline-block; 
+        }
+        .portfolio-item img {
+            display: block; 
+            max-width: 100%; 
+        }
+        .portfolio-item .portfolio-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;    
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-hover {
+            opacity: 0.7; 
+        }
+       
+        .portfolio-item .test1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 380px;
+            height: 283px;
+            margin-top: -141.5px; 
+            margin-left: -190px;
+            background-color: orange;
+            text-align: center;
+        }
+
+        .portfolio-item .test1 h2 {
+            color: rgb(255, 255, 255);
+            line-height: 283px; 
+            margin: 0; 
+            opacity: 1; /* Make the text fully opaque */
+            font-weight:bolder; /* Make the text bolder */
+        }
+        .portfolio-hover h2 {
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="container">
+        <div class="logo">
+            <img src="img/navbar-logo.svg"/>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="">services</a></li>
+                <li><a href="">portfolio</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">team</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    
+    <div class="header">
+        <h2>Welcome To Our Studio!</h2>
+        <div class="header-content">
+        
+         <p>  IT'S NICE TO MEET YOU</p>
+        </div>
+    </div>
+  
+<div class="portfolio">
+ <div class="container">
+    <div class="row1">
+
+        <div class="portfolio-item">
+            <img src="img/1.jpg"/>
+            <div class="portfolio-hover">
+                <div class="test1">
+                    <h2>+</h2>
+                </div>
+            </div>
+        </div>
+         
+        <div class="portfolio-item">
+            <img src="img/2.jpg"/>
+            <div class="portfolio-hover">
+                <div class="test1">
+                    <h2>+</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="img/3.jpg"/>
+                <div class="portfolio-hover">
+                    <div class="test1">
+                        <h2>+</h2>
+                    </div>
+            </div>
+        </div>
+            
+    </div>   
+
+    <div class="row2"> 
+
+        <div class="portfolio-item">
+            <img src="img/4.jpg"/>
+                <div class="portfolio-hover">
+                    <div class="test1">
+                        <h2>+</h2>
+                    </div>
+                </div>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="img/5.jpg"/>
+            <div class="portfolio-hover">
+                <div class="test1">
+                    <h2>+</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-item">
+            <img src="img/6.jpg"/>
+                <div class="portfolio-hover">
+                    <div class="test1">
+                        <h2>+</h2>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+ </div>
+</div>    
+    
+</body>
+</html>
